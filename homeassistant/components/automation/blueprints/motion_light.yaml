@@ -38,7 +38,9 @@ max_exceeded: silent
 triggers:
   trigger: state
   entity_id: !input motion_entity
-  from: "off"
+  from: 
+    - "off"
+    - "unavailable"
   to: "on"
 
 actions:
